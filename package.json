@@ -1,0 +1,45 @@
+{
+    "name": "altv-typescript-vue-tailwind-mysql",
+    "version": "1.0.0",
+    "description": "A template for altV with typescript, vue, tailwindcss and mysql",
+    "main": "",
+    "author": "Nightranger",
+    "license": "ISC",
+    "type": "module",
+    "scripts": {
+        "build": "npm run clean && tsc && npm run copy",
+        "copy": "copyfiles src/**/* --exclude=**/*.ts --up 1 ./resources",
+        "clean": "rimraf resources",
+        "update": "altv-pkg d release",
+        "windows": "npm run build && altv-server.exe",
+        "linux": "npm run build && ./start.sh",
+        "watch": "node --experimental-modules scripts/watch"
+    },
+    "dependencies": {
+        "chokidar": "^3.5.1",
+        "download": "^8.0.0",
+        "kleur": "^4.1.4",
+        "lodash": "^4.17.20",
+        "object-hash": "^2.1.1",
+        "sjcl": "^1.0.8",
+        "threads": "^1.6.3",
+        "tiny-worker": "^2.3.0",
+        "tree-kill": "^1.2.2"
+    },
+    "devDependencies": {
+        "@altv/types-client": "^1.1.0",
+        "@altv/types-natives": "^1.1.0",
+        "@altv/types-server": "^1.3.0",
+        "@altv/types-webview": "^1.0.2",
+        "@types/gulp": "^4.0.6",
+        "@types/gulp-debug": "^2.0.31",
+        "@types/node": "^14.6.1",
+        "altv-pkg": "latest",
+        "copyfiles": "^2.4.1",
+        "gulp": "^4.0.2",
+        "gulp-using": "^0.1.1",
+        "prisma": "^2.16.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.0.2"
+    }
+}
