@@ -30,3 +30,5 @@ You should then be able to change back to the previous directory in the terminal
 Connect to the server through the altV client, and if the altV logo image is showing in the bottom right, with your character, everything has been successful.
 
 Shouldn't have any problems from then on out.
+
+Remeber when using this repository, give credit to Stuyk, CoDex and myself
