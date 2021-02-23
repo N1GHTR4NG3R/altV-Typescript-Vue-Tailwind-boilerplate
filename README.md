@@ -31,4 +31,4 @@ Connect to the server through the altV client, and if the altV logo image is sho
 
 Shouldn't have any problems from then on out.
 
-Remeber when using this repository, give credit to Stuyk, CoDex and myself
+Remember when using this repository, give credit to Stuyk, CoDex and myself
